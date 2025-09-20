@@ -3,7 +3,7 @@ module EnView
     isolate_namespace EnView
 
     config.app_generators do |g|
-      g.template_engine :enview
+      g.template_engine :en_view
     end
   end
 end
