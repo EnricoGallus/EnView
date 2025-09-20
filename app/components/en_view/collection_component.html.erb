@@ -1,0 +1,9 @@
+<div id="<%= @model.table_name %>" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <% if @collection.any? %>
+    <% @collection.each do |record| %>
+      <%= render UI::CollectionItemComponent.new(record: record, datapoints: datapoints) %>
+    <% end %>
+  <% else %>
+    <p class="col-span-full text-center my-10"><%= t("#{@model.name.downcase}.no_records") %></p>
+  <% end %>
+</div>

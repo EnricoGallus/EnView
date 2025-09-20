@@ -2,7 +2,10 @@ PATH
   remote: .
   specs:
     en_view (0.1.0)
+      pundit (~> 2.5)
       rails (>= 8.0.2.1)
+      tailwindcss-rails (~> 4.3)
+      view_component (~> 4.0)
 
 GEM
   remote: https://rubygems.org/
@@ -87,6 +90,7 @@ GEM
     connection_pool (2.5.4)
     crass (1.0.6)
     date (3.4.1)
+    diff-lcs (1.6.2)
     drb (2.2.3)
     erb (5.0.2)
     erubi (1.13.1)
@@ -126,6 +130,8 @@ GEM
     nio4r (2.7.4)
     nokogiri (1.18.9-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.18.9-x86_64-linux-gnu)
+      racc (~> 1.4)
     parallel (1.27.0)
     parser (3.3.9.0)
       ast (~> 2.4.1)
@@ -143,6 +149,8 @@ GEM
       stringio
     puma (7.0.2)
       nio4r (~> 2.0)
+    pundit (2.5.1)
+      activesupport (>= 3.0.0)
     racc (1.8.1)
     rack (3.2.1)
     rack-session (2.1.1)
@@ -189,6 +197,23 @@ GEM
     regexp_parser (2.11.2)
     reline (0.6.2)
       io-console (~> 0.5)
+    rspec-core (3.13.5)
+      rspec-support (~> 3.13.0)
+    rspec-expectations (3.13.5)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-mocks (3.13.5)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.13.0)
+    rspec-rails (8.0.2)
+      actionpack (>= 7.2)
+      activesupport (>= 7.2)
+      railties (>= 7.2)
+      rspec-core (~> 3.13)
+      rspec-expectations (~> 3.13)
+      rspec-mocks (~> 3.13)
+      rspec-support (~> 3.13)
+    rspec-support (3.13.6)
     rubocop (1.80.2)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
@@ -220,7 +245,13 @@ GEM
     ruby-progressbar (1.13.0)
     securerandom (0.4.1)
     sqlite3 (2.7.3-arm64-darwin)
+    sqlite3 (2.7.3-x86_64-linux-gnu)
     stringio (3.1.7)
+    tailwindcss-rails (4.3.0)
+      railties (>= 7.0.0)
+      tailwindcss-ruby (~> 4.0)
+    tailwindcss-ruby (4.1.13-arm64-darwin)
+    tailwindcss-ruby (4.1.13-x86_64-linux-gnu)
     thor (1.4.0)
     timeout (0.4.3)
     tzinfo (2.0.6)
@@ -230,6 +261,9 @@ GEM
     unicode-emoji (4.1.0)
     uri (1.0.3)
     useragent (0.16.11)
+    view_component (4.0.2)
+      activesupport (>= 7.1.0, < 8.1)
+      concurrent-ruby (~> 1)
     websocket-driver (0.8.0)
       base64
       websocket-extensions (>= 0.1.0)
@@ -238,13 +272,18 @@ GEM
 
 PLATFORMS
   arm64-darwin-24
+  x86_64-linux
 
 DEPENDENCIES
   en_view!
   propshaft
   puma
+  pundit (~> 2.5)
+  rspec-rails (~> 8.0)
   rubocop-rails-omakase
   sqlite3
+  tailwindcss-rails (~> 4.3)
+  view_component (~> 4.0)
 
 BUNDLED WITH
    2.6.3

@@ -43,11 +43,16 @@ jobs:
           ruby-version: 3.4.2
           bundler-cache: true
 
-      - name: Run tests
+      #- name: Prepare Database
+      #  env:
+      #    RAILS_ENV: test
+          # REDIS_URL: redis://localhost:6379/0
+      #  run: bin/rails db:test:prepare
+
+      - name: Run RSpec tests
         env:
           RAILS_ENV: test
-          # REDIS_URL: redis://localhost:6379/0
-        run: bin/rails db:test:prepare test
+        run: bundle exec rspec
 
       - name: Keep screenshots from failed system tests
         uses: actions/upload-artifact@v4
