@@ -4,7 +4,7 @@ require "en_view/generators/scaffold/scaffold_generator"
 module Enview
   class ScaffoldGeneratorTest < Rails::Generators::TestCase
     tests EnView::Generators::ScaffoldGenerator
-    destination Rails.root
+    destination Rails.root.join("tmp")
     setup :prepare_destination
 
     test "creates a model file with proper class" do
