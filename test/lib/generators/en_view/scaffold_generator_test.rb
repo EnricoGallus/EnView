@@ -1,5 +1,5 @@
 require "test_helper"
-require "enview/generators/scaffold/scaffold_generator"
+require "generators/enview/scaffold/scaffold_generator"
 
 module Enview
   class ScaffoldGeneratorTest < Rails::Generators::TestCase
