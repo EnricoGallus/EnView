@@ -15,12 +15,6 @@ gem "rubocop-rails-omakase", require: false
 # Start debugger with binding.b [https://github.com/ruby/debug]
 # gem "debug", ">= 1.0.0"
 
-gem "view_component", "~> 4.0"
-
-gem "pundit", "~> 2.5"
-
-gem "tailwindcss-rails", "~> 4.3"
-
 group :development, :test do
   gem "rspec-rails", "~> 8.0"
   # gem 'capybara'         # optional for feature/system specs
