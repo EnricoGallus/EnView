@@ -1,9 +1,9 @@
 require "test_helper"
-require "en_view/generators/scaffold/scaffold_generator"
+require "enview/generators/scaffold/scaffold_generator"
 
 module Enview
   class ScaffoldGeneratorTest < Rails::Generators::TestCase
-    tests EnView::Generators::ScaffoldGenerator
+    tests Enview::Generators::ScaffoldGenerator
     destination Rails.root.join("tmp")
     setup :prepare_destination
 

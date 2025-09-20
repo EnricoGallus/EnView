@@ -1,4 +1,4 @@
-module EnView
+module Enview
   class ApplicationRecord < ActiveRecord::Base
     self.abstract_class = true
   end

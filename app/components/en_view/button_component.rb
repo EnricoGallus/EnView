@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module EnView
+module Enview
   class ButtonComponent < ViewComponent::Base
     def initialize(label:, link:, scheme: :default, method: :get, data: {})
       super()

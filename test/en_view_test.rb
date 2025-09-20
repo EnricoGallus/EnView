@@ -1,7 +1,7 @@
 require "test_helper"
 
-class EnViewTest < ActiveSupport::TestCase
+class EnviewTest < ActiveSupport::TestCase
   test "it has a version number" do
-    assert EnView::VERSION
+    assert Enview::VERSION
   end
 end

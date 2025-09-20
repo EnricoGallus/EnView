@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module EnView
+module Enview
   class CollectionComponent < ViewComponent::Base
     renders_many :datapoints, "Datapoint"
 

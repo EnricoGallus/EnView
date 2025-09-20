@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module EnView
+module Enview
   class CollectionItemComponent < ViewComponent::Base
     def initialize(record:, datapoints:)
       super()

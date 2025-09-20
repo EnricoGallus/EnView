@@ -1,4 +1,4 @@
-module EnView
+module Enview
   class ApplicationController < ActionController::Base
   end
 end

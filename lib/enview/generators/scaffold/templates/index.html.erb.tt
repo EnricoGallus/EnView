@@ -1,16 +1,16 @@
-<%%= render EnView::PageComponent.new(prefix: "<%= singular_table_name %>.index.") do |c| %>
+<%%= render Enview::PageComponent.new(prefix: "<%= singular_table_name %>.index.") do |c| %>
   <%% c.with_header_element do %>
-    <%%= render EnView::ButtonComponent.new(
+    <%%= render Enview::ButtonComponent.new(
       label: t('<%= singular_table_name %>.index.new'),
       link: new_<%= singular_route_name %>_path,
       scheme: :primary
     ) %>
   <%% end %>
 
-  <%%= render EnView::CollectionComponent.new(model: <%= class_name %>, collection: @<%= plural_table_name %>) do |component| %>
+  <%%= render Enview::CollectionComponent.new(model: <%= class_name %>, collection: @<%= plural_table_name %>) do |component| %>
     <%% component.with_data_point do |<%= singular_table_name %>| %>
 <% attributes.each do |attribute| -%>
-      <%%= render EnView::NameValueComponent.new(
+      <%%= render Enview::NameValueComponent.new(
         label: t('<%= singular_table_name %>.<%= attribute.column_name %>'),
         value: <%= singular_table_name %>.<%= attribute.column_name %>
       ) %>

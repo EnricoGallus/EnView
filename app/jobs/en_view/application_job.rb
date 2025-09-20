@@ -1,4 +1,4 @@
-module EnView
+module Enview
   class ApplicationJob < ActiveJob::Base
   end
 end

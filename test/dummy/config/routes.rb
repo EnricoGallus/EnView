@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  mount EnView::Engine => "/en_view"
+  mount Enview::Engine => "/enview"
 end
