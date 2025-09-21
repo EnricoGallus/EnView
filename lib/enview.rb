@@ -1,3 +1,4 @@
+require "tailwindcss-rails"
 require "enview/version"
 require "enview/engine"
 

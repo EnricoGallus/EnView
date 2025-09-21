@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    enview (0.1.0)
+    en_view (0.1.0)
       pundit (~> 2.5)
       rails (>= 8.0.2.1)
       tailwindcss-rails (~> 4.3)
@@ -275,7 +275,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  enview!
+  en_view!
   propshaft
   puma
   rspec-rails (~> 8.0)

@@ -1,7 +1,7 @@
 require_relative "lib/enview/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "enview"
+  spec.name        = "en_view"
   spec.version     = Enview::VERSION
   spec.authors     = [ "enrico" ]
   spec.email       = [ "enrico.gallus@gmail.com" ]
