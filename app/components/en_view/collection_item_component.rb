@@ -6,7 +6,7 @@ module Enview
       super()
       @record = record
       @datapoints = datapoints
-      @scope = namespaces + [record]
+      @scope = namespaces + [ record ]
     end
   end
 end

@@ -33,7 +33,7 @@ module Enview
         say_status :invoke, "pundit:policy #{class_name}", :green
         Rails::Generators.invoke(
           "pundit:policy",
-          [class_name],
+          [ class_name ],
           behavior: behavior,
           destination_root: destination_root
         )
