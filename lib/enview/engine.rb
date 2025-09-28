@@ -6,7 +6,7 @@ module Enview
       g.template_engine :enview
     end
 
-    app.config.autoload_paths   << root.join("app", "components")
-    app.config.eager_load_paths << root.join("app", "components")
+    config.autoload_paths   << root.join("app", "components")
+    config.eager_load_paths << root.join("app", "components")
   end
 end
