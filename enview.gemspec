@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
-  spec.add_runtime_dependency "rails", ">= 8.0.2.1"
+  spec.add_runtime_dependency "rails", ">= 8.0.3"
   spec.add_runtime_dependency "view_component", "~> 4.0"
   spec.add_runtime_dependency "tailwindcss-rails", "~> 4.3"
   spec.add_runtime_dependency "pundit", "~> 2.5"
