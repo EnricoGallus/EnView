@@ -1,6 +1,6 @@
 <% content_for :title, t("#{prefix}.content_title") %>
 
-<div class="w-2/3 mx-auto">
+<div class="w-full mx-auto">
   <div class="flex justify-between items-center gap-2">
     <h1 class="font-bold text-4xl"><%= t("#{prefix}.title") %></h1>
     <% if header_elements.any? %>
@@ -10,7 +10,7 @@
     <% end %>
   </div>
 
-  <%= content %>
+  <%= body %>
 
   <% if footer_elements.any? %>
     <% footer_elements.each do |element| %>
