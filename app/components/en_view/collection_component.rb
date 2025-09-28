@@ -1,13 +1,14 @@
 # frozen_string_literal: true
 
-module EnView
+module Enview
   class CollectionComponent < ViewComponent::Base
     renders_many :datapoints, "Datapoint"
 
-    def initialize(model:, collection:)
+    def initialize(model:, collection:, namespaces: [])
       super()
       @collection = collection || []
       @model = model
+      @namespaces = namespaces
     end
 
     class Datapoint < ViewComponent::Base

@@ -1,4 +1,4 @@
-module EnView
+module Enview
   module ApplicationHelper
   end
 end

@@ -1,6 +1,6 @@
-module EnView
+module Enview
   class Engine < ::Rails::Engine
-    isolate_namespace EnView
+    isolate_namespace Enview
 
     config.app_generators do |g|
       g.template_engine :enview

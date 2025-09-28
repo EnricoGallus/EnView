@@ -1,7 +1,0 @@
-<%%= render EnView::PageComponent.new(prefix: "<%= singular_table_name %>.new.") do |c| %>
-    <%%= render "form", <%= singular_table_name %>: @<%= singular_table_name %> %>
-
-    <%% c.with_footer_element do %>
-        <%%= render EnView::ButtonComponent.new(label: t('ui.back'), link: <%= index_helper(type: :path) %>, scheme: :default) %>
-    <%% end %>
-<%% end %>

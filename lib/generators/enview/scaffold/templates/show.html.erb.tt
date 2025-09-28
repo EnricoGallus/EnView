@@ -1,0 +1,13 @@
+<%%= render Enview::PageComponent.new(prefix: "<%= singular_table_name %>.show.") do |c| %>
+    <%%= render @<%= singular_table_name %> %>
+
+    <%% c.with_footer_element do %>
+        <%%= render Enview::ButtonComponent.new(label: t('ui.edit'), link: <%= edit_helper(type: :path) %>, scheme: :primary) %>
+    <%% end %>
+    <%% c.with_footer_element do %>
+        <%%= render Enview::ButtonComponent.new(label: t('ui.back'), link: <%= index_helper %>_path) %>
+    <%% end %>
+    <%% c.with_footer_element do %>
+        <%%= render Enview::ButtonComponent.new(label: t('ui.delete'), link: <%= model_resource_name(prefix: "@") %>, scheme: :danger, method: :delete) %>
+    <%% end %>
+<%% end %>

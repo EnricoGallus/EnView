@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module EnView
+module Enview
   class PageComponent < ViewComponent::Base
     renders_many :header_elements
     renders_many :footer_elements

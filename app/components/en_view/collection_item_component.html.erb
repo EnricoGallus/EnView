@@ -5,8 +5,8 @@
   <% end %>
 
   <div class="mt-4 flex flex-wrap gap-2">
-    <%= render UI::ButtonComponent.new(label: t('ui.show'), link: polymorphic_path([:admin, @record])) %>
-    <%= render UI::ButtonComponent.new(label: t('ui.edit'), link: edit_polymorphic_path([:admin, @record]), scheme: :primary) %>
-    <%= render UI::ButtonComponent.new(label: t('ui.delete'), link: polymorphic_path([:admin, @record]), scheme: :error, method: :delete) %>
+    <%= render UI::ButtonComponent.new(label: t('ui.show'), link: polymorphic_path(@scope)) %>
+    <%= render UI::ButtonComponent.new(label: t('ui.edit'), link: edit_polymorphic_path(@scope), scheme: :primary) %>
+    <%= render UI::ButtonComponent.new(label: t('ui.delete'), link: polymorphic_path(@scope), scheme: :error, method: :delete) %>
   </div>
 </div>

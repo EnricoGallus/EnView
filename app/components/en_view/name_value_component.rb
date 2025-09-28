@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module EnView
+module Enview
   class NameValueComponent < ViewComponent::Base
     def initialize(label:, value:)
       super()

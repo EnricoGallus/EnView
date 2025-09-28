@@ -1,2 +1,2 @@
-EnView::Engine.routes.draw do
+Enview::Engine.routes.draw do
 end

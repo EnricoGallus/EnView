@@ -1,13 +1,13 @@
-require_relative "lib/en_view/version"
+require_relative "lib/enview/version"
 
 Gem::Specification.new do |spec|
-  spec.name        = "en_view"
-  spec.version     = EnView::VERSION
+  spec.name        = "enview"
+  spec.version     = Enview::VERSION
   spec.authors     = [ "enrico" ]
   spec.email       = [ "enrico.gallus@gmail.com" ]
   spec.homepage    = "TODO"
-  spec.summary     = "TODO: Summary of EnView."
-  spec.description = "TODO: Description of EnView."
+  spec.summary     = "TODO: Summary of Enview."
+  spec.description = "TODO: Description of Enview."
   spec.license     = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the "allowed_push_host"
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
   end
 
-  spec.add_runtime_dependency "rails", ">= 8.0.2.1"
+  spec.add_runtime_dependency "rails", ">= 8.0.3"
   spec.add_runtime_dependency "view_component", "~> 4.0"
   spec.add_runtime_dependency "tailwindcss-rails", "~> 4.3"
   spec.add_runtime_dependency "pundit", "~> 2.5"
