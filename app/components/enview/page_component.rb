@@ -2,8 +2,9 @@
 
 module Enview
   class PageComponent < ViewComponent::Base
-    renders_many :header_elements
-    renders_many :footer_elements
+    renders_many :headers
+    renders_one :body
+    renders_many :footers
 
     def initialize(prefix: nil)
       super()
