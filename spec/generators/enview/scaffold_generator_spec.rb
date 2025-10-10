@@ -15,7 +15,7 @@ RSpec.describe Enview::Generators::ScaffoldGenerator, type: :generator do
   end
 
   it "generates componentized scaffold views" do
-    output = run_generator %w(Post title:string body:text)
+    output = run_generator %w[Post title:string body:text]
 
     expect(output).to match(%r{create\s+app/views/posts/index\.html\.erb})
     expect(output).to match(%r{create\s+app/views/posts/_form\.html\.erb})
@@ -29,7 +29,7 @@ RSpec.describe Enview::Generators::ScaffoldGenerator, type: :generator do
 
   describe 'the generated files' do
     before do
-      run_generator %w(Post title:string body:text)
+      run_generator %w[Post title:string body:text]
     end
 
     describe 'the index page' do
