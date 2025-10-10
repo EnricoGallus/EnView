@@ -29,4 +29,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "rspec-rails", "~> 8.0"
   spec.add_development_dependency "capybara", "~> 3.40"
+  spec.add_development_dependency "ammeter", "~> 1.1"
 end
