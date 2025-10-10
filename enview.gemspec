@@ -26,4 +26,8 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "view_component", "~> 4.0"
   spec.add_runtime_dependency "tailwindcss-rails", "~> 4.3"
   spec.add_runtime_dependency "pundit", "~> 2.5"
+
+  spec.add_development_dependency "rspec-rails", "~> 8.0"
+  spec.add_development_dependency "capybara", "~> 3.40"
+  spec.add_development_dependency "ammeter", "~> 1.1"
 end
