@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "generators/view_component/component/component_generator"
+require "generators/view_component/erb/erb_generator"
 
 module Enview
   module Generators
