@@ -3,7 +3,7 @@
 require "generators/view_component/erb/erb_generator"
 
 module ViewComponent
-  module Generators
+  module Enview
     class TailwindcssGenerator < ViewComponent::Generators::ErbGenerator
       source_root File.expand_path("templates", __dir__)
     end
