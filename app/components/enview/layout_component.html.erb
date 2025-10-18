@@ -24,7 +24,7 @@
       </div>
       <div class="hidden lg:block navbar-center">
         <ul class="menu menu-horizontal join">
-          <%= render(UI::Nav::MenuComponent.with_collection(menu_items)) %>
+          <%= render(Enview::Nav::MenuComponent.with_collection(menu_items)) %>
         </ul>
       </div>
       <div class="navbar-end">
@@ -38,7 +38,7 @@
   <div class="drawer-side">
     <label for="enchan-navbar" aria-label="close sidebar" class="drawer-overlay"></label>
     <ul class="menu bg-base-200 min-h-full w-80 p-4">
-      <%= render(UI::Nav::MenuComponent.with_collection(menu_items)) %>
+      <%= render(Enview::Nav::MenuComponent.with_collection(menu_items)) %>
     </ul>
   </div>
 </div>
