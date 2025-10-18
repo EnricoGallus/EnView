@@ -1,12 +1,12 @@
 <div class="rounded-xl border border-gray-200 shadow-sm p-4 flex flex-col justify-between">
 
   <% @datapoints.each do |dp| %>
-    <%= render UI::NameValueComponent.new(label: dp.label, value: dp.name) %>
+    <%= render Enview::NameValueComponent.new(label: dp.label, value: dp.name) %>
   <% end %>
 
   <div class="mt-4 flex flex-wrap gap-2">
-    <%= render UI::ButtonComponent.new(label: t('ui.show'), link: polymorphic_path(@scope)) %>
-    <%= render UI::ButtonComponent.new(label: t('ui.edit'), link: edit_polymorphic_path(@scope), scheme: :primary) %>
-    <%= render UI::ButtonComponent.new(label: t('ui.delete'), link: polymorphic_path(@scope), scheme: :error, method: :delete) %>
+    <%= render Enview::ButtonComponent.new(label: t('ui.show'), link: polymorphic_path(@scope)) %>
+    <%= render Enview::ButtonComponent.new(label: t('ui.edit'), link: edit_polymorphic_path(@scope), scheme: :primary) %>
+    <%= render Enview::ButtonComponent.new(label: t('ui.delete'), link: polymorphic_path(@scope), scheme: :error, method: :delete) %>
   </div>
 </div>
